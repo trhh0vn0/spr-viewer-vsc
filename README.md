@@ -1,5 +1,5 @@
 # spr-viewer
-Online tool to view sprite (`*.spr`) files in the browser
+Ported from https://github.com/trhh0vn0/spr-viewer-vsc into an extension on VSC
 
 ## [[DEMO]Try it here](https://vadimdez.github.io/spr-viewer/)
 
