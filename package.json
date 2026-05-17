@@ -4,12 +4,19 @@
   "version": "1.0.1",
   "description": "",
   "main": "./dist/extension.js",
+  "type": "module",
   "contributes": {
-    "customEditors": [{
+    "customEditors": [
+      {
         "viewType": "spr.view",
         "displayName": "SPR Viewer",
-        "selector": [{ "filenamePattern": "*.spr" }]
-      }]
+        "selector": [
+          {
+            "filenamePattern": "*.spr"
+          }
+        ]
+      }
+    ]
   },
   "scripts": {
     "build": "tsc -b",
