@@ -1,5 +1,5 @@
-import { paletteWithLastTransToRGBA, paletteToRGBA } from "./helpers";
-import { Reader, ReaderDataType } from "./Reader";
+import { paletteWithLastTransToRGBA, paletteToRGBA } from "./helpers.js";
+import { Reader, ReaderDataType } from "./Reader.js";
 
 interface SpriteHeader {
   version: number;

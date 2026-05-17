@@ -17,7 +17,7 @@ export const getFileData = (file: File) => {
 export function paletteToRGBA(
   pixels: Uint8Array,
   palette: Uint8Array
-): Uint8Array {
+): Uint8Array<ArrayBuffer> {
   const rgba = new Uint8Array(pixels.length * 4);
 
   const len = pixels.length;
@@ -33,13 +33,13 @@ export function paletteToRGBA(
   }
   console.log(rgba);
 
-  return rgba;
+  return rgba as Uint8Array<ArrayBuffer>;
 }
 
 export function paletteWithLastTransToRGBA(
   pixels: Uint8Array,
   palette: Uint8Array
-): Uint8Array {
+): Uint8Array<ArrayBuffer> {
   const rgba = new Uint8Array(pixels.length * 4);
   const len = pixels.length;
 

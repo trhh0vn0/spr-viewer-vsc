@@ -4,7 +4,9 @@
   "version": "1.0.1",
   "description": "",
   "main": "./dist/extension.js",
-  "type": "module",
+    "engines": {
+    "vscode": "^1.120.0"
+  },
   "contributes": {
     "customEditors": [
       {
@@ -19,10 +21,14 @@
     ]
   },
   "scripts": {
-    "build": "tsc -b",
-    "watch": "tsc -b -w",
+    "build": "tsup",
+    "watch": "tsup --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trhh0vn0/spr-viewer-vsc.git"
@@ -36,6 +42,8 @@
   "homepage": "https://github.com/trhh0vn0/spr-viewer-vsc",
   "devDependencies": {
     "@types/vscode": "^1.120.0",
+    "esbuild": "^0.28.0",
+    "tsup": "^8.5.1",
     "typescript": "^6.0.2"
   }
 }
