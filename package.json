@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "description": "",
   "main": "./dist/extension.js",
-    "engines": {
+  "engines": {
     "vscode": "^1.120.0"
   },
   "contributes": {
@@ -42,6 +42,7 @@
   "homepage": "https://github.com/trhh0vn0/spr-viewer-vsc",
   "devDependencies": {
     "@types/vscode": "^1.120.0",
+    "@vscode/vsce": "^3.9.1",
     "esbuild": "^0.28.0",
     "tsup": "^8.5.1",
     "typescript": "^6.0.2"
